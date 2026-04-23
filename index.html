@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" /> <!-- Garante acentos como á, é, í -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Faz o site caber no celular -->
+  <title>Nayara Leal- Arquitetura & Interiores</title>
+  
+  <!-- Importando o arquivo de estilo (o acabamento do site) -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="Imagens/" type="image/x-icon">
+  
+  <!-- Importando ícones e fontes do Google -->
+  <link rel="stylesheet" href="" />
+  <link href="" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">Nayara <span> Arquitetura & Interiores </span></a>
+      
+      <!-- Botão para abrir o menu no celular -->
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Links do Menu -->
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato" class="nav__cta">Solicitar Orçamento</a></li>
+      </ul>
+
+      <!-- Ícones de redes sociais -->
+      <div class="nav__socials">
+        <a href="https://www.instagram.com/arquitetanayaraleal/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/arq-nayaraleal/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção Principal (Banner) -->
+  <section id="home" class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Arquitetura & Interiores</p>
+      <h1 class="hero__title">Projetando Sonhos,<br>Construindo Realidades</h1>
+      <p class="hero__sub">Arquitetura contemporânea com foco em bem-estar,<br>funcionalidade e sofisticação.</p>
+      <a href="#portfolio" class="btn btn--outline">Ver Projetos</a>
+    </div>
+    <div class="hero__scroll">
+      <span></span>
+      <p>Role para baixo</p>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section id="portfolio" class="portfolio section">
+    <div class="section__header">
+      <span class="section__label">Nosso Trabalho</span>
+      <h2 class="section__title">Projetos em Destaque</h2>
+      <div class="section__line"></div>
+    </div>
+    <div class="portfolio__grid">
+      <!-- Cada 'article' é um quadrado de projeto -->
+      <article class="project-card">
+        <div class="project-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1600607687940-4e524cb35d27?auto=format&fit=crop&w=800&q=80" alt="Residência Vale" />
+        </div>
+        <div class="project-card__overlay">
+          <span class="project-card__tag">Interiores</span>
+          <h3 class="project-card__title">Residência Vale</h3>
+          <div class="project-card__line"></div>
+        </div>
+      </article>
+      <!-- Repetição para outros projetos -->
+      <article class="project-card">
+        <div class="project-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?auto=format&fit=crop&w=800&q=80" alt="Edifício Aurora" />
+        </div>
+        <div class="project-card__overlay">
+          <span class="project-card__tag">Arquitetura</span>
+          <h3 class="project-card__title">Edifício Aurora</h3>
+          <div class="project-card__line"></div>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Loft Industrial" />
+        </div>
+        <div class="project-card__overlay">
+          <span class="project-card__tag">Reforma</span>
+          <h3 class="project-card__title">Loft Industrial</h3>
+          <div class="project-card__line"></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="services section">
+    <div class="section__header">
+      <span class="section__label">O que oferecemos</span>
+      <h2 class="section__title">Serviços</h2>
+      <div class="section__line"></div>
+    </div>
+    <div class="services__grid">
+      <div class="service-item">
+        <i class="fas fa-drafting-compass"></i>
+        <h3>Projetos Personalizados</h3>
+        <p>Cada espaço é único — criamos projetos sob medida para refletir sua identidade e necessidades.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-hard-hat"></i>
+        <h3>Acompanhamento de Obra</h3>
+        <p>Supervisão profissional em todas as etapas, garantindo qualidade e fidelidade ao projeto.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-couch"></i>
+        <h3>Consultoria de Interiores</h3>
+        <p>Transformamos ambientes com curadoria de materiais, mobiliário e paleta de cores.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="about section">
+    <div class="about__img-col">
+      <!-- Verifique se esse caminho da imagem está correto no seu computador -->
+      <img src="../Teste1Nay/Imagens/fotonay.PNG" alt="Arquiteto" />
+      <div class="about__badge">
+        <span class="about__badge-num">7+</span>
+        <span class="about__badge-label">Anos de Experiência</span>
+      </div>
+    </div>
+    <div class="about__content">
+      <span class="section__label">Sobre o Studio</span>
+      <h2 class="section__title">Criando espaços que contam histórias</h2>
+      <p>Com mais de 7 anos de experiência, nosso studio foca em humanizar a arquitetura. Acreditamos que cada traço deve refletir a personalidade de quem habita o espaço.</p>
+      <ul class="about__list">
+        <li><i class="fas fa-check"></i> Projetos Personalizados</li>
+        <li><i class="fas fa-check"></i> Acompanhamento de Obra</li>
+        <li><i class="fas fa-check"></i> Consultoria de Interiores</li>
+      </ul>
+      <a href="#contato" class="btn btn--dark">Fale Conosco</a>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contact section">
+    <div class="contact__inner">
+      <div class="section__header">
+        <span class="section__label">Entre em Contato</span>
+        <h2 class="section__title">Inicie seu Projeto</h2>
+      </div>
+      <form class="contact__form" action="https://formspree.io/f/seu-id-aqui" method="POST">
+        <div class="form-group">
+          <label for="name">Nome Completo</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group form-group--full">
+          <label for="type">Tipo de Projeto</label>
+          <select id="type" name="type">
+            <option>Residencial</option>
+            <option>Comercial</option>
+            <option>Interiores / Consultoria</option>
+          </select>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn--gold form-group--full">Enviar Solicitação</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#home" class="footer__logo">Nayara Leal <span>Arquitetura</span></a>
+      <p class="footer__copy">© 2025 Nayara Leal. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5511981961554" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
